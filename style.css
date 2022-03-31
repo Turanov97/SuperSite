@@ -46,6 +46,7 @@ a {
 }
 
 .sectiob__about {
+   position: relative;
    background-color: #1D1D1F;
 }
 
@@ -590,6 +591,7 @@ form .searchBtn .icon-search.searchbtnActive .searchhandl {
 /* about */
 
 .about__title {
+   padding-top: 100px;
    font-family: 'Orbitron';
    font-style: normal;
    font-weight: 700;
@@ -629,3 +631,130 @@ form .searchBtn .icon-search.searchbtnActive .searchhandl {
    background-size: cover;
 }
 
+/* form */
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   top: -52%;
+   left: 46%;
+   padding: 30px 54px;
+   position: absolute;
+   background: #FFFFFF;
+   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.12);
+   border-radius: 6px;
+}
+
+.contact__title {
+   font-family: 'Orbitron';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 66px;
+   line-height: 130%;
+   text-align: center;
+   color: #1D1D1F;
+}
+
+.contact__subtitle {
+   font-family: 'Jeko-Medium';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 110%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #5A5A5A;
+   margin-bottom: 25px;
+}
+
+.contact__input {
+   width: 400px;
+   background: #F5F5F5;
+   border-radius: 2px;
+   border: none;
+   margin-bottom: 10px;
+   padding: 17px 20px;
+
+
+   font-family: 'Jeko-semi-bold';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+   color: #ADADAD;
+}
+
+.contact__btn {
+   display: inline-block;
+
+   width: 298px;
+   margin-top: 16px;
+   font-family: 'Jeko-semi-bold';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+   text-align: center;
+   color: #FFFFFF;
+   background: #FF004F;
+   border-radius: 30px;
+   padding: 14px;
+   transition: .2s ease-in;
+}
+
+.contact__btn:hover {
+   color: #000000;
+}
+
+/* reviews */
+
+.reviews {
+   padding-top: 60px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.reviews__item {
+   border-radius: 12px;
+   background: linear-gradient(29deg, rgba(255, 255, 255, 1) 30%, rgba(250, 246, 246, 1) 100%);
+   cursor: pointer;
+   width: 31.33333%;
+   margin-bottom: 26px;
+   padding: 15px 20px;
+   transition: .2s ease-in;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+.reviews__img  {
+   border-radius: 50%;
+   margin-bottom: 60px;
+   object-fit: contain;
+   width: 89px;
+   height: 89px;
+}
+
+.reviews__title {
+   font-family: 'Jeko-bold';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 30px;
+   text-align: center;
+   color: #393939;
+   margin-bottom: 10px;
+}
+
+.reviews__text {
+   font-family: 'Jeko-light';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 24px;
+   text-align: center;
+   color: #5A5A5A;
+}
