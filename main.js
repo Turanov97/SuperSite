@@ -105,6 +105,7 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
+  
 }
 mybutton.addEventListener('click',topFunction )
 
@@ -113,6 +114,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 
 
 

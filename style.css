@@ -126,7 +126,10 @@ a {
    width: 125%;
 } */
 
+/*  */
 
+
+/*  */
 
 
 
@@ -159,8 +162,8 @@ a {
    width: 30px;
    height: 32px;
    position: absolute;
-   top: 7px;
-   left: 4px !important;
+   top: 10px;
+   left: 10px !important;
 
    cursor: pointer;
 
@@ -1517,3 +1520,20 @@ select.select-wrap {
    color: #000;
    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
  }
+
+
+
+ /* media */
+
+ @media (max-width:1441px) {
+   #menu {
+      margin: -90px 0 0 -155px !important;
+   }
+ }
+
+ 
+ @media (max-width:1025px) {
+   #menu {
+      margin: -90px 0 0 -50px !important;
+   }
+ } 
