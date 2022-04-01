@@ -238,6 +238,7 @@ a {
  */
 #menu {
    position: absolute;
+   left: 0px;
    width: 300px;
    height: 100vh;
    margin: -90px 0 0 -200px;
@@ -1508,6 +1509,7 @@ select.select-wrap {
    cursor: pointer;
    width: 40px;
    height: 40px;
+   transition: all .2s ease-in;
  }
  
  #myBtn:hover {
