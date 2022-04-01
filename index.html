@@ -8,6 +8,10 @@
     <title>SuperSite</title>
     <link
       rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
@@ -30,20 +34,21 @@
           <div class="header__inner">
             <div class="header__address">
                <div class="header__title">
-                  address;
+                  address:
                </div>
-               <div class="header__text">
-                  8744 Main Street, Unit 403
-                 <p> Woodstock GA 30188</p>
-               </div>
+               <a href="https://goo.gl/maps/UhYm43doYPgK5h9B8" target="blank" class="header__text">
+                  Toshkent
+                  Yunusobod, <p>Amir Temuur ko'chasi,
+                     Stroy Center</p> 
+               </a>
 
             </div>
             <div class="header__form">
                <div class="header__link">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                  <a href="#"><i class="fa-solid fa-at"></i></a>
+                  <a target="blank" href="https://www.instagram.com/supersite.uz/?utm_medium=copy_link"><i class="fa-brands fa-instagram"></i></a>
+                  <a target="blank" href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  <a target="blank" href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a target="blank" href="#"><i class="fa-solid fa-at"></i></a>
                </div>
                <form>
                   <span class=searchBtn>
@@ -93,12 +98,26 @@
       </div><!-- container -->
     </section><!-- burger menu -->
 
+    <button id="myBtn"><i class="fa-solid fa-circle-arrow-up"></i></button>
+
     <section class="intro">
       <div class="container">
          <div class="intro__inner">
             <div class="intro__logo">
                <div class="intro__menu">
-
+                  <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                     <a href="#"><li>Home</li></a>
+                     <a href="#"><li>About</li></a>
+                     <a href="#"><li>Info</li></a>
+                     <a href="#"><li>Contact</li></a>
+                     <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                  </ul>
+                  </div>
                </div>
                <a href=""><img src="./image/Logo.png" alt=""></a>
             </div>
@@ -129,8 +148,10 @@
                </div>
             </div>
             <div class="intro__Show">
-               <a href="#">swipe</a>
-               <p><i class="fa-solid fa-down-long"></i></p>
+               <a href="#works">swipe
+                  <p><i class="fa-solid fa-down-long"></i></p>
+               </a>
+             
             </div>
          </div><!-- container -->
       </div><!-- intro__content -->
@@ -392,13 +413,316 @@
                   when an unknown printer took
                </div>
             </div>
+            <div class="reviews__item">
+               <img class="reviews__img" src="./image/clients/2.png" alt="">
+               <div class="reviews__title">
+                  Lorem Ipsum
+               </div>
+               <div class="reviews__text">
+                  Lorem Ipsum has been the industry's 
+                  standard dummy text ever since the 1500s, 
+                  when an unknown printer took
+               </div>
+            </div>
+            <div class="reviews__item">
+               <img class="reviews__img" src="./image/clients/3.png" alt="">
+               <div class="reviews__title">
+                  Lorem Ipsum
+               </div>
+               <div class="reviews__text">
+                  Lorem Ipsum has been the industry's 
+                  standard dummy text ever since the 1500s, 
+                  when an unknown printer took
+               </div>
+            </div>
+            <div class="reviews__item">
+               <img class="reviews__img" src="./image/clients/4.png" alt="">
+               <div class="reviews__title">
+                  Lorem Ipsum
+               </div>
+               <div class="reviews__text">
+                  Lorem Ipsum has been the industry's 
+                  standard dummy text ever since the 1500s, 
+                  when an unknown printer took
+               </div>
+            </div>
+            <div class="reviews__item">
+               <img class="reviews__img" src="./image/clients/1-1.png" alt="">
+               <div class="reviews__title">
+                  Lorem Ipsum
+               </div>
+               <div class="reviews__text">
+                  Lorem Ipsum has been the industry's 
+                  standard dummy text ever since the 1500s, 
+                  when an unknown printer took
+               </div>
+            </div>
+            <div class="reviews__item">
+               <img class="reviews__img" src="./image/clients/2.png" alt="">
+               <div class="reviews__title">
+                  Lorem Ipsum
+               </div>
+               <div class="reviews__text">
+                  Lorem Ipsum has been the industry's 
+                  standard dummy text ever since the 1500s, 
+                  when an unknown printer took
+               </div>
+            </div>
          </div>
-      </div>
+      </div><!-- container -->
     </Section>
 
-    <div class="section"></div>
-    <div class="section"></div>
-    <div class="section"></div>
-    <script src="main.js"></script>
+    <section class="section__portfolio">
+      <div class="container">
+         <div id="works" class="works">
+            <div class="portfolio__title">
+               .creatives
+            </div>
+            <div class="portfolio__subtitle">
+               our portfolio
+            </div>
+         </div>
+
+         <div class="works__content">
+            <div class="works__item">
+               <img class="works__image" src="./image/portfolio/fifth.png" alt="">
+               <div class="works__info">
+                   <div class="works__title">creatively designed</div>
+                   <div class="works__text">Lorem ipsum dolor sit</div>
+               </div>
+            </div>
+            <div class="works__item">
+               <img class="works__image" src="./image/portfolio/second.png" alt="">
+               <div class="works__info">
+                   <div class="works__title">creatively designed</div>
+                   <div class="works__text">Lorem ipsum dolor sit</div>
+               </div>
+            </div>
+            <div class="works__item">
+               <img class="works__image" src="./image/portfolio/sixth.png" alt="">
+               <div class="works__info">
+                   <div class="works__title">creatively designed</div>
+                   <div class="works__text">Lorem ipsum dolor sit</div>
+               </div>
+            </div>
+            <div class="works__item">
+               <img class="works__image" src="./image/portfolio/sixth.png" alt="">
+               <div class="works__info">
+                   <div class="works__title">creatively designed</div>
+                   <div class="works__text">Lorem ipsum dolor sit</div>
+               </div>
+            </div>
+            <div class="works__item">
+               <img class="works__image" src="./image/portfolio/second.png" alt="">
+               <div class="works__info">
+                   <div class="works__title">creatively designed</div>
+                   <div class="works__text">Lorem ipsum dolor sit</div>
+               </div>
+            </div>
+            <div class="works__item">
+               <img class="works__image" src="./image/portfolio/third.png" alt="">
+               <div class="works__info">
+                   <div class="works__title">creatively designed</div>
+                   <div class="works__text">Lorem ipsum dolor sit</div>
+               </div>
+            </div>
+         </div>
+         <a class="works__show" href="#">more <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div><!-- container -->
+    </section>
+
+    <section class="section">
+      <div class="section__title">
+         .price
+      </div>
+      <div class="section__text">
+         Select the service you want
+      </div>
+    </section>
+    <section>
+       <div class="container">'
+         <div class="price">
+            <div class="select-wrap">
+               <select class="custom-select" id="select" name="select" placeholder="SMM">
+                 <option value="option1">Telegram Bot</option>
+                 <option value="option2">Web</option>
+                 <option value="option3">SRM System</option>
+               </select>
+             </div>
+             <div class="price__inner">
+                <div class="price__item">
+                   <div class="price__title">
+                     Acceleration
+                   </div>
+                   <div class="pricte__text">
+                     Is simply dummy text of the printing and typesetting industry. 
+                     Lorem Ipsum has been the industry's standard dummy text ever since 
+                     the 1500s, when an unknown printer took a galley of type and scrambled 
+                     it to make a type specimen book. It has survived not only five centuries, 
+                     but also the leap into electronic typesetting, remaining essentially unchanged. 
+                     It was popularised in the 1960s with the release of Letraset sheets containing 
+                     Lorem Ipsum passages, and more recently with desktop publishing software like 
+                     Aldus PageMaker including versions of Lorem Ipsum.
+                   </div>
+                   <button class="price__btn">Select</button>
+                </div>
+                <div class="price__item">
+                  <div class="price__title">
+                     Powerfull business
+                  </div>
+                  <div class="pricte__text">
+                    Is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since 
+                    the 1500s, when an unknown printer took a galley of type and scrambled 
+                    it to make a type specimen book. It has survived not only five centuries, 
+                    but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing 
+                    Lorem Ipsum passages, and more recently with desktop publishing software like 
+                    Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <button class="price__btn">Select</button>
+               </div>
+               <div class="price__item">
+                  <div class="price__title">
+                    Turbo
+                  </div>
+                  <div class="pricte__text">
+                    Is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since 
+                    the 1500s, when an unknown printer took a galley lor of type and scrambled 
+                    it to make a type specimen book. It has survived not only five centuries, 
+                    but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing 
+                    Lorem Ipsum passages, and more recently with desktop publishing software like 
+                    Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <button class="price__btn ">Select</button>
+               </div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <section class="clients">
+       <div class="section__title">
+         .our clients
+       </div>
+       <div class="swiper mySwiper mySwiper__slider">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide my__slider">
+              <div class="clients__slider">
+                 <img src="./image/friends/brain.png" alt="">
+              </div>
+           </div>
+           <div class="swiper-slide my__slider">
+            <div class="clients__slider">
+               <img src="./image/friends/agro.png" alt="">
+            </div>
+           </div>
+           <div class="swiper-slide my__slider">
+            <div class="clients__slider">
+               <img src="./image/friends/disc.png" alt="">
+            </div>
+           </div>
+           <div class="swiper-slide my__slider">
+            <div class="clients__slider">
+               <img src="./image/friends/mila.png" alt="">
+            </div>
+           </div>
+           <div class="swiper-slide my__slider">
+              <div class="clients__slider">
+                 <img src="./image/friends/brain.png" alt="">
+              </div>
+           </div>
+           <div class="swiper-slide my__slider">
+              <div class="clients__slider">
+                 <img src="./image/friends/agro.png" alt="">
+              </div>
+           </div>
+           <div class="swiper-slide my__slider">
+              <div class="clients__slider">
+                 <img src="./image/friends/disc.png" alt="">
+              </div>
+           </div>
+           <div class="swiper-slide my__slider">
+              <div class="clients__slider">
+                 <img src="./image/friends/agro.png" alt="">
+              </div>
+           </div>
+           <div class="swiper-slide my__slider">
+              <div class="clients__slider">
+                 <img src="./image/friends/agro.png" alt="">
+              </div>
+           </div>
+         </div>
+       </div>
+    </section>
+    
+    <section class="section">
+       <div class="container">
+          <div class="section__title">
+             .contact
+          </div>
+          <div class="connection__title">
+             Drop us a line
+          </div>
+          <div class="connection">
+             <div class="connection__item">
+                <input type="text" placeholder="Name:" class="connection__input">
+                <input type="text" placeholder="Your company:" class="connection__input">
+             </div>
+             <div class="connection__item">
+               <input type="text" placeholder="Email:" class="connection__input">
+               <input type="text" placeholder="Phone:" class="connection__input">
+            </div>
+          </div>
+          <button class="conection__btn">Send</button>
+
+       </div>
+    </section>
+    <footer class="section">
+      <div class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__item">
+                  <div class="footer__logo">
+                     <img src="./image/Logo.png" alt="">
+                  </div>
+                  <div class="footer__text">
+                     Lorem Ipsum is simply dummy
+                     text of the printing text
+                  </div>
+                  <div class="footer__soctiol">
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                     <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                     <a href="#"><i class="fa-solid fa-at"></i></a>
+                  </div>
+               </div>
+               <div class="footer__item">
+                  <div class="footer__title">
+                     Email:
+                  </div>
+                  <div class="footer__text">
+                     Lorem Ipsum is simply dummy
+                     text of the printing text
+                  </div>
+               </div>
+               <div class="footer__item">
+                  <div class="footer__title">
+                     Address:
+                  </div>
+                  <div class="footer__text">
+                     Lorem Ipsum is simply dummy
+                     text of the printing text
+                  </div>
+               </div>
+            </div><!-- footer__inner -->
+         </div><!-- container -->
+      </div><!-- footer -->
+    </footer>
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="main.js"></script>
+    
   </body>
 </html>
