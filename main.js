@@ -1,69 +1,38 @@
-if (history.scrollRestoration) {
-   history.scrollRestoration = "manual";
- } else {
-   window.onbeforeunload = function () {
-     window.scrollTo(0, 0);
-   };
- }
-
-
 /* menu btn */
-$(".menu-burger, .menu-items").on("click", function () {
-  $(".menu-bg, .menu-items, .menu-burger").toggleClass("fs");
-  $(".menu-burger").text() == "☰"
-    ? $(".menu-burger").text("✕")
-    : $(".menu-burger").text("☰");
+$("#nav_toggle").on("click", function () {
+  $(this).toggleClass("active");
+  $("#menu").toggleClass("menu__active");
+  $(".overlay").toggleClass("active");
 });
+
+$('.menu_close').on('click', function ()  {
+  $("#menu").removeClass("menu__active");
+  $("#nav_toggle").removeClass("active");
+  $(".overlay").removeClass("active");
+})
+
+const overlay = document.querySelector(".overlay");
+
+document.addEventListener("click", (e) => {
+  if (e.target == overlay) {
+    $("#menu").removeClass("menu__active");
+    $("#nav_toggle").removeClass("active");
+    $(".overlay").removeClass("active");
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    $("#menu").removeClass("menu__active");
+    $("#nav_toggle").removeClass("active");
+    $(".overlay").removeClass("active");
+  }
+});
+
 /* search btn */
 $(".searchBtn").click(function () {
   $(".icon-search").toggleClass("searchbtnActive");
   $("form").toggleClass("active");
-});
-/* select======== */
-document.querySelectorAll(".select-wrap").forEach(function (wrap) {
-  let select = wrap.querySelector(".custom-select");
-  let classes = select.getAttribute("class"),
-    id = select.getAttribute("id"),
-    name = select.getAttribute("name");
-  let template = '<div class="' + classes + '">';
-  template +=
-    '<span class="custom-select-trigger">' +
-    select.getAttribute("placeholder") +
-    "</span>";
-  template += '<div class="custom-options">';
-  select.querySelectorAll("option").forEach(function (option) {
-    template +=
-      '<span class="custom-option' +
-      '"data-value="' +
-      option.getAttribute("value") +
-      '">' +
-      option.innerText +
-      "</span>";
-  });
-  template += "</div></div>";
-  let select_wrapper = document.createElement("div");
-  select.style.display = "none";
-  select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
-  wrap.appendChild(select_wrapper);
-});
-
-document
-  .querySelector(".custom-select-trigger")
-  .addEventListener("click", function () {
-    document
-      .querySelector(".custom-select-trigger")
-      .closest(".custom-select")
-      .classList.toggle("opened");
-  });
-document.querySelectorAll(".custom-option").forEach((option) => {
-  option.addEventListener("click", function () {
-    option.closest(".select-wrap").querySelector("select").value =
-      option.getAttribute("data-value");
-    option.closest(".custom-select").classList.remove("opened");
-    option
-      .closest(".custom-select")
-      .querySelector(".custom-select-trigger").innerText = option.innerText;
-  });
 });
 
 /* SLIDER */
@@ -92,7 +61,7 @@ var swiper = new Swiper(".mySwiper", {
 
 /* top top */
 
-let mybutton = document.querySelector("#myBtn")
+let mybutton = document.querySelector("#myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -105,9 +74,8 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
-  
 }
-mybutton.addEventListener('click',topFunction )
+mybutton.addEventListener("click", topFunction);
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -116,5 +84,33 @@ function topFunction() {
 }
 
 
+/*selext to ona est  */
 
+document.querySelectorAll(".select-wrap").forEach(function(wrap) {
+  let select = wrap.querySelector(".custom-select");
+  let classes = select.getAttribute("class"),
+      id      = select.getAttribute("id"),
+      name    = select.getAttribute("name");
+  let template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + select.getAttribute("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      select.querySelectorAll("option").forEach(function(option) {
+        template += '<span class="custom-option' + '"data-value="' + option.getAttribute("value") + '">' + option.innerText + '</span>';
+      });
+  template += '</div></div>';
+  let select_wrapper = document.createElement('div'); 
+  select.style.display = 'none';
+  select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
+  wrap.appendChild(select_wrapper);
+});
 
+document.querySelector(".custom-select-trigger").addEventListener("click", function() {
+  document.querySelector(".custom-select-trigger").closest(".custom-select").classList.toggle("opened");
+});
+document.querySelectorAll(".custom-option").forEach((option)=>{
+  option.addEventListener("click", function() {
+    option.closest(".select-wrap").querySelector("select").value = option.getAttribute("data-value");
+    option.closest(".custom-select").classList.remove("opened");
+    option.closest(".custom-select").querySelector(".custom-select-trigger").innerText = option.innerText;
+  });
+});
