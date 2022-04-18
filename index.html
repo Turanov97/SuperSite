@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -41,7 +42,6 @@
                   Yunusobod, <p>Amir Temuur ko'chasi,
                      Stroy Center</p> 
                </a>
-
             </div>
             <div class="header__form">
                <div class="header__link">
@@ -63,6 +63,13 @@
                                 <g transform=matrix(1,0,0,1,-35.375,-39.25)><g transform=matrix(1,0,0,1,65.866,69.757)><path class=searchline2 d=M-28.2,8.4c0,0,16.6-16.9,35.9-36.5></path></g></g></g></svg> </em>
                      </span><input placeholder=Search..>
                </form>
+               <div class="intro__menu header__menu">
+                  <div id="menuToggle">
+                     <button class="nav-toggle" id="nav_toggle" type="button">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
+                  </div>
+               </div>
             </div>
           </div><!-- header inner -->
        </div><!-- container -->
@@ -82,7 +89,6 @@
                      <button class="nav-toggle" id="nav_toggle" type="button">
                         <span class="nav-toggle__item">Menu</span>
                     </button>
-                
                   </div>
                </div>
                <a href=""><img src="./image/Logo.png" alt=""></a>
@@ -95,19 +101,18 @@
             </div>
             <ul id="menu">
                <div class="menu_close"><i class="fa-solid fa-xmark"></i></div>
-               <a href="#"><li>services</li></a>
-               <a href="#"><li>about us</li></a>
-               <a href="#"><li>portfolio</li></a>
-               <a href="#"><li>price</li></a>
-               <a href="#"><li>clients</li></a>
-               <a href="#"><li>contact</li></a>
+               <a href="#services"><li>services</li></a>
+               <a href="#about"><li>about us</li></a>
+               <a href="#portfolio"><li>portfolio</li></a>
+               <a href="#price"><li>price</li></a>
+               <a href="#clients"><li>clients</li></a>
+               <a href="#contact"><li>contact</li></a>
                <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
             </ul>
          </div>
-      </div><!-- container -->
-      <div class="intro__border"></div>
-      <div class="intro__contetn">
-         <div class="container">
+       <img class="intro__line" src="./image/line.svg" alt="">
+       <!-- <div class="intro__border"></div> -->
+         <div class="intro__contetn">
             <div class="intro__header">
                <div class="intro__title">
                   Your thrilling results in online
@@ -134,7 +139,7 @@
       </div><!-- intro__content -->
     </section>
 
-    <section class="section">
+    <section id="services" class="section">
       <div class="section__title">
          .services
       </div>
@@ -308,7 +313,7 @@
         </div>
        </div><!-- container -->
     </section>
-    <section class="section__contact">
+    <section id="contact" class="section__contact">
       <div class="contact">
          <div class="contact__title">
            .contact
@@ -323,9 +328,25 @@
          <a class="contact__btn" href="#">Send</a>
       </div>
     </section>
+
+    <section class="container"> 
+      <div class="feedback">
+         <div class="feedback__inner">
+            <div class="feedback__title">.contact</div>
+            <div class="feedback__subtitle">Drop us a line</div>
+            <div class="feedback__form">
+               <input placeholder="Name:" type="text">
+               <input placeholder="Email:" type="text">
+               <input placeholder="Your company:" type="text">
+               <input placeholder="Phone:" type="text">
+               <button class="feedback__btn">Send</button>
+            </div>
+         </div>
+      </div>
+    </section>
+
     <!-- about us -->
-    <section class="sectiob__about">
-      
+    <section id="about" class="sectiob__about">
       <div class="container">
          <div class="about__title">
             .about us
@@ -427,7 +448,7 @@
       </div><!-- container -->
     </Section>
 
-    <section class="section__portfolio">
+    <section id="portfolio" class="section__portfolio">
       <div class="container">
          <div id="works" class="works">
             <div class="portfolio__title">
@@ -486,7 +507,7 @@
       </div><!-- container -->
     </section>
 
-    <section class="section">
+    <section id="price" class="section">
       <div class="section__title">
          .price
       </div>
@@ -559,7 +580,7 @@
           </div>
        </div>
     </section>
-    <section class="clients">
+    <section id="clients" class="clients">
        <div class="section__title">
          .our clients
        </div>
