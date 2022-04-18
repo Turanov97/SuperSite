@@ -416,6 +416,12 @@
 
 
 @media (max-width: 450px) {
+   /* .header__address {
+      display: none;
+   }
+   .header__inner  {
+      justify-content: end;
+   } */
    .custom-select-trigger {
       width: 270px;
       font-size: 18px;
@@ -451,6 +457,14 @@
 
    .price__btn {
       font-size: 20px;
+      width: 100%;
+   }
+
+   .clients__slider img {
+      width: 45%;
+   }
+   .clients__slider {
+      border: none;
    }
 
    /* .about__contetn */
