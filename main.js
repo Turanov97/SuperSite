@@ -4,10 +4,17 @@ $("#nav_toggle").on("click", function () {
   $("#menu").toggleClass("menu__active");
   $(".overlay").toggleClass("active");
 });
+/* haeder-menu */
+$("#header_toggle").on("click", function () {
+  $(this).toggleClass("active");
+  $("#menu").toggleClass("menu__active");
+  $(".overlay").toggleClass("active");
+});
 
 $(".menu_close").on("click", function () {
   $("#menu").removeClass("menu__active");
   $("#nav_toggle").removeClass("active");
+  $("#header_toggle").removeClass("active");
   $(".overlay").removeClass("active");
 });
 
@@ -17,6 +24,7 @@ document.addEventListener("click", (e) => {
   if (e.target == overlay) {
     $("#menu").removeClass("menu__active");
     $("#nav_toggle").removeClass("active");
+    $("#header_toggle").removeClass("active");
     $(".overlay").removeClass("active");
   }
 });

@@ -317,7 +317,14 @@ a {
 
 .header__menu {
    display: none;
+   position: relative;
+   /* border: 1px solid #C1C7D7; */
+   width: 36px;
+   height: 36px;
+   /* background: #fff; */
+   border-radius: 50%;
 }
+
 
 /* .menu, .menu-bg, .menu-burger {
    display: none;
@@ -553,7 +560,7 @@ form .searchBtn .icon-search.searchbtnActive .searchhandl {
 
 /* intro */
 .intro {
-   background: #FAF6F6 url('/image/pexels-philipp-birmes-830891\ \(1\).jpg');
+   background: #FAF6F6 url('/image/bg-4.jpg') center no-repeat;
    background-size: cover;
    position: relative;
 }
@@ -604,6 +611,7 @@ form .searchBtn .icon-search.searchbtnActive .searchhandl {
    /* background: #fff; */
    border-radius: 50%;
 }
+
 .intro__line {
    position: absolute;
    top: 20%;
